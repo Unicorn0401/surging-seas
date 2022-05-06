@@ -1,2 +1,391 @@
 /* ===== YOUR CSS GOES HERE ===== */
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
+/*landing page*/
+
+
+
+
+/*General Settings*/
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+      body {
+      font-family: 'Open Sans', sans-serif;
+      }
+      a {
+      text-decoration: none;
+      }
+      li {
+      list-style: none;
+      }
+
+html{
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      box-sizing: border-box;
+      font-size: 16px;
+}
+
+/*Import Fonts*/
+@import url(https://fonts.googleapis.com/css2?family=Square+Peg&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Square+Peg&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+
+/*Define Colors*/
+      :root {
+            --deepblue: #03222a;
+            --oceanblue: #03485c;
+            --bluegreen: #2c727f;
+            --dustyblue: #66888f;
+            --lightyellow: #e8ca8d;}
+
+/*Naviagtion Bar*/
+      .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px;
+      background-color: var(--oceanblue);
+      color: var(--dustyblue);
+      }
+
+      .nav-links a {
+      color: var(--lightyellow);
+      }
+
+      /* PROJECT TITLE */
+      .projecttitle {
+      font-size: 48px;
+      font-family: "Cute Font", cursive;}
+
+      /* NAVBAR MENU */
+      .menu {
+      display: flex;
+      gap: 1em;
+      font-size: 18px;
+      }
+      .menu li:hover {
+      background-color: var(--bluegreen);
+      border-radius: 5px;
+      transition: 0.3s ease;
+      }
+      .menu li {
+      padding: 5px 14px;
+      }
+      
+
+      /*RESPONSIVE NAVBAR MENU STARTS*/
+      /* CHECKBOX HACK */
+      input[type=checkbox]{
+      display: none;
+      }
+      /*HAMBURGER MENU*/
+      .hamburger {
+      display: none;
+      font-size: 24px;
+      user-select: none;
+      }
+/*Navigation bar ENDS*/
+
+
+
+
+/*ABOUT PAGE*/
+
+.team-section{
+      background: #465482;
+        text-align: center;
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+  
+  .team-section h1{
+      font-family: "Source Sans Pro";
+      font-size: 2em;
+      color: white;
+      display: inline-block;
+      padding-bottom: 10px;
+      border-bottom: 4px solid;
+  }
+  
+  .inner-width{
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px;
+      padding-top: 88px;
+      color: #333;
+      overflow: hidden;
+  }
+  
+  .pe{
+      float: left;
+      width: calc(100%/2);
+      overflow: hidden;
+      padding: 80px 0;
+      transition: 0.4s;
+  }
+  
+  .pe:hover{
+      background: #394060;
+  }
+  
+  .team-section img{
+      width: 150px;
+      height: 150px;
+  }
+  
+  .name{
+      color: white;
+      margin: 16px 0;
+      text-transform: uppercase;
+  }
+  
+  .designer{
+      font-style: italic;
+      color: #3498db;
+  }
+  
+  a{
+      color: white;
+      text-decoration: none;
+  }
+  
+  a:hover{
+      text-decoration: underline;
+  }
+  
+  .profile{
+      margin-top: 12px;
+      line-height: 30px;
+  }
+  
+  /*meet team ends*/
+  
+  #docs{
+      font-family: "Source Sans Pro";
+      font-size: 2em;
+      display: inline-block;
+      margin-bottom: 40px;
+      padding-top: 40px;
+      border-bottom: 4px solid;
+      color:#394060;
+  }
+  
+  .project-doc{
+      background-color: #fff;
+  }
+  
+  .pd{
+      float: left;
+      width: calc(100%/2);
+      overflow: hidden;
+      padding: 80px 0;
+      transition: 0.4s;
+  }
+  
+  .pd:hover{
+      background: #394060;
+  }
+  
+  .dname{
+      text-transform: uppercase;
+      padding-top: 20px;
+      color: #465482;
+  }
+  
+  .dname:hover{
+      color: #fff;
+  }
+  
+  .project-doc img{
+      height: 200px;
+      width: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+    }
+    
+.proposalintro {
+      background-color: lightblue;
+      color: royalblue;
+    }
+
+
+.proposalheadline {
+      padding-top: 20px;
+      text-align: center;
+      font-family: "Cute Font", cursive;
+      color: royalblue;
+      font-size: 2rem;
+    }
+    
+.proposalpagetext {
+      text-align: center;
+      font-size: 18px;
+      color: royalblue;
+      font-family: "Indie Flower";
+    }
+    
+.titlesubtext {
+      color: whitesmoke;
+      font-family: "Square Peg", cursive;
+    }
+
+    .proposal {
+      color: lightblue;
+      background-color: darkblue;
+      box-shadow: 1px 1px lightblue;
+      font-size: 1.6rem;
+      font-family: "Cute Font", cursive;
+    }
+    
+    .proposal:hover {
+      color: darkblue;
+      background-color: skyblue;
+    }
+    
+    .designdocumentation {
+      color: lightblue;
+      background-color: royalblue;
+      box-shadow: 1px 1px lightblue;
+      font-size: 1.6rem;
+      font-family: "Cute Font", cursive;
+      margin: 5px;
+    }
+    
+    .designdocumentation:hover {
+      color: lightblue;
+      background-color: darkslateblue;
+    }
+    
+    .uxreport {
+      color: darkblue;
+      background-color: lightblue;
+      box-shadow: 1px 1px lightblue;
+      font-size: 1.6rem;
+      font-family: "Cute Font", cursive;
+    }
+    
+    .uxreport:hover {
+      color: skyblue;
+      background-color: darkblue;
+    }
+    
+    .designdocumentationintrotext {
+      background: skyblue;
+      color: darkblue;
+      border: dashed royalblue;
+    }
+    
+    .proposalintro {
+      background: lightblue;
+      color: royalblue;
+      border: dashed darkblue;
+      padding: 5px;
+    }
+    
+    .uxreportintro {
+      background: royalblue;
+      color: lightblue;
+      border: dashed lightblue;
+      padding: 5px;
+    }
+    
+    .proposalbackground {
+      background: beige;
+    }
+    
+    .proposalpagecontainer {
+      display: grid;
+      grid-row-gap: 1em;
+      font-family: "Square Peg", cursive;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+      /* APPLYING MEDIA QUERIES */
+      @media (max-width: 768px) {
+
+      /* NAVIGATION BAR*/
+      .menu {
+      display:none;
+      position: absolute;
+      background-color: var(--oceanblue);
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
+      }
+      .menu li:hover {
+      display: inline-block;
+      background-color: var(--bluegreen);
+      transition: 0.3s ease;
+      }
+      .menu li + li {
+      margin-top: 12px;
+      }
+      input[type=checkbox]:checked ~ .menu{
+      display: block;
+      }
+      .hamburger {
+      display: block;
+      }
+
+       /* NAVIGATION BAR END*/
+      
+      /*PROJECT INTRODUCTION*/
+      .pe,.pd{
+            width: 100%;
+            padding: 40px;
+        }
+
+        #pro{
+            padding: 40px 20px 80px 20px;
+        }
+        
+        #meetteam, #docs{
+            font-size: 1.5em;
+            border: none;
+            text-align: center;
+        }
+        
+        #docs{
+            padding-top:0;
+            padding-bottom: 90px;
+            margin-bottom: 10px;
+        }
+        
+        .pd{
+            padding: 20px;
+        }
+
+
+      }
+     
