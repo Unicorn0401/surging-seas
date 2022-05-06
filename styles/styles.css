@@ -56,6 +56,55 @@ html{
             --dustyblue: #66888f;
             --lightyellow: #e8ca8d;}
 
+
+
+/*Landing Page*/
+.landingpagebackground {
+      background-image: url("surging-seas/images/landingpage/Background1.jpe");
+    }
+    
+    .landingpagebackground::after {
+      opacity: 0.75;
+    }
+    
+    .landingpageprojecttile{
+      font-family: "Cute Font", cursive;
+      color: var(--oceanblue);
+      text-align:center;
+      padding-top:10%;
+    }
+
+    .landingpagetext {
+      font-family: "Square Peg", cursive;
+      font-size: 1.5rem;
+      text-align: center;
+      text-shadow: 2px 2px whitesmoke;
+      max-width: 500px;
+      margin: auto;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    
+    .enter {
+      font-family: "Cute Font", cursive;
+      font-size: 1.2rem;
+      color: darkslategray;
+      background-color: lightblue;
+      align-content: center;
+      box-shadow: 1px 1px darkblue;
+      display: grid;
+      margin: auto;
+      min-height: 75px;
+      min-width: 250px;
+    }
+    
+    .enter:hover {
+      font-size: 1.3rem;
+      color: lightblue;
+      background-color: darkslategray;
+    }
+
+
 /*Naviagtion Bar*/
       .navbar {
       display: flex;
@@ -333,7 +382,7 @@ html{
 
     */
 
-      /* APPLYING MEDIA QUERIES */
+/* APPLYING MEDIA QUERIES */
       @media (max-width: 768px) {
 
       /* NAVIGATION BAR*/
