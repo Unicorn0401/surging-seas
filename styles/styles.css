@@ -33,10 +33,19 @@ html{
       font-size: 16px;
 }
 
+
+
+
 /*Import Fonts*/
-@import url(https://fonts.googleapis.com/css2?family=Square+Peg&display=swap);
-@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Square+Peg&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+
+
+
+
+
 
 
 /*Define Colors*/
@@ -64,7 +73,8 @@ html{
       /* PROJECT TITLE */
       .projecttitle {
       font-size: 48px;
-      font-family: "Cute Font", cursive;}
+      font-family: 'Square Peg';
+      }
 
       /* NAVBAR MENU */
       .menu {
@@ -99,18 +109,18 @@ html{
 
 
 /*ABOUT PAGE*/
-
+/*about team*/
 .team-section{
-      background: #465482;
+      background: var(--dustyblue);
         text-align: center;
       padding-top: 80px;
       padding-bottom: 80px;
   }
   
   .team-section h1{
-      font-family: "Source Sans Pro";
+      font-family: "Cute Font";
       font-size: 2em;
-      color: white;
+      color: var(--lightyellow);
       display: inline-block;
       padding-bottom: 10px;
       border-bottom: 4px solid;
@@ -121,7 +131,7 @@ html{
       margin: auto;
       padding: 40px;
       padding-top: 88px;
-      color: #333;
+      color: var(--deepblue);
       overflow: hidden;
   }
   
@@ -130,11 +140,13 @@ html{
       width: calc(100%/2);
       overflow: hidden;
       padding: 80px 0;
+      margin-top: 20px;
       transition: 0.4s;
   }
   
   .pe:hover{
-      background: #394060;
+      background: beige;
+
   }
   
   .team-section img{
@@ -143,32 +155,14 @@ html{
   }
   
   .name{
-      color: white;
+      color: var(--deepblue);
       margin: 16px 0;
       text-transform: uppercase;
   }
+  /*about team ends*/
   
-  .designer{
-      font-style: italic;
-      color: #3498db;
-  }
-  
-  a{
-      color: white;
-      text-decoration: none;
-  }
-  
-  a:hover{
-      text-decoration: underline;
-  }
-  
-  .profile{
-      margin-top: 12px;
-      line-height: 30px;
-  }
-  
-  /*meet team ends*/
-  
+
+  /*project document*/
   #docs{
       font-family: "Source Sans Pro";
       font-size: 2em;
@@ -176,7 +170,7 @@ html{
       margin-bottom: 40px;
       padding-top: 40px;
       border-bottom: 4px solid;
-      color:#394060;
+      color: var(--deepblue);
   }
   
   .project-doc{
@@ -192,23 +186,29 @@ html{
   }
   
   .pd:hover{
-      background: #394060;
+      background: var(--dustyblue);
   }
   
   .dname{
       text-transform: uppercase;
       padding-top: 20px;
-      color: #465482;
+      color: var(--deepblue);
+  }
+
+  .introduction{
+        color:var(--lightyellow);
+        padding: 20px;
   }
   
   .dname:hover{
-      color: #fff;
+      color: var(--deepblue);
   }
   
   .project-doc img{
       height: 200px;
       width: auto;
   }
+  /*project document end*/
 
 
 
@@ -226,7 +226,7 @@ html{
 
 
 
-
+/*
 .card {
       display: flex;
       flex-flow: column nowrap;
@@ -330,6 +330,9 @@ html{
       font-size: 1.8rem;
       text-align: center;
     }
+
+    */
+
       /* APPLYING MEDIA QUERIES */
       @media (max-width: 768px) {
 
@@ -385,6 +388,7 @@ html{
         .pd{
             padding: 20px;
         }
+      /*PROJECT INTRODUCTION END*/
 
 
       }
