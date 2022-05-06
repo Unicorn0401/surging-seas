@@ -60,7 +60,8 @@ html{
 
 /*Landing Page*/
 .landingpagebackground {
-  background-image: url('https://www.masslive.com/resizer/eNVigEzdcJIWCOIGovkiYwzBBWE=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/expo.advance.net/img/f68a2b6976/width2048/dd4_downtownnorthendflood.jpeg');
+  background-image: url(/images/landing/Background1.jpeg);
+  background-repeat: no-repeat;
     }
     
     .landingpagebackground::after {
