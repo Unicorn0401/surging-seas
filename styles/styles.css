@@ -46,8 +46,6 @@ html{
 
 
 
-
-
 /*Define Colors*/
       :root {
             --deepblue: #03222a;
@@ -58,10 +56,11 @@ html{
 
 
 
-/*Landing Page*/
+/*Landing Page  /*images/landing/Background1.jpg*/
+
 .landingpagebackground {
-  background-image: url(/images/landing/Background1.jpeg);
-  background-repeat: no-repeat;
+  background-image: url(../images/landing/Background1.jpeg);
+   background-repeat: no-repeat;
     }
     
     .landingpagebackground::after {

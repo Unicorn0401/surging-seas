@@ -1,5 +1,35 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
 
+/*Landing Page*/
+
+const i = 0;
+const images = [];
+const slideTime = 10000; // 10 seconds
+
+images[0] = 'images/landing/Background1.jpeg';
+images[1] = 'images/landing/Background2.jpeg';
+images[2] = 'images/landing/Background3.jpeg';
+
+function changePicture() {
+    console.log('running beginning');
+    if (window.location.href == file:///Users/yumi/Documents/bu/2022%20Spring/CM523%20/surging-seas/index.html) {
+        console.log('running inside');
+  document.body.style.backgroundImage = "url(" + images[i] + ")";
+
+  if (i < images.length - 1) {
+    i++;
+  } else {
+    i = 0;
+  }
+  setTimeout(changePicture, slideTime);
+}
+
+window.onload = changePicture;
+
+
+
+
+
 
 /*Navigation Bar*/
 $(document).ready(function() {
