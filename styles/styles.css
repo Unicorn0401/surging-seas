@@ -1,9 +1,25 @@
 /* ===== YOUR CSS GOES HERE ===== */
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
-/*landing page*/
 
 
+/*Import Fonts*/
 
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Cute+Font&family=M+PLUS+Rounded+1c&family=Rubik+Glitch&family=Square+Peg&display=swap')
+
+/*Fonts Reference*/
+/* font-family: 'Averia Serif Libre', cursive;
+font-family: 'Cute Font', cursive;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Rubik Glitch', cursive;
+font-family: 'Square Peg', cursive;*/
+
+/*Define Colors*/
+      :root {
+            --deepblue: #03222a;
+            --oceanblue: #03485c;
+            --bluegreen: #2c727f;
+            --dustyblue: #66888f;
+            --lightyellow: #e8ca8d;}
 
 /*General Settings*/
 * {
@@ -35,27 +51,6 @@ html{
 
 
 
-
-/*Import Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Square+Peg&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-
-
-
-
-
-
-/*Define Colors*/
-      :root {
-            --deepblue: #03222a;
-            --oceanblue: #03485c;
-            --bluegreen: #2c727f;
-            --dustyblue: #66888f;
-            --lightyellow: #e8ca8d;}
-
-
-
 /*Landing Page  /*images/landing/Background1.jpg*/
 
 .landingpagebackground {
@@ -68,15 +63,16 @@ html{
     }
     
     .landingpageprojecttile{
-      font-family: "Cute Font", cursive;
+      font-size: 5rem;
+      font-family: 'Cute Font', cursive;
       color: var(--oceanblue);
       text-align:center;
       padding-top:10%;
     }
 
     .landingpagetext {
-      font-family: "Square Peg", cursive;
-      font-size: 1.5rem;
+      font-family: 'Averia Serif Libre', cursive;
+      font-size: 1.2rem;
       text-align: center;
       text-shadow: 2px 2px whitesmoke;
       max-width: 500px;
@@ -87,19 +83,20 @@ html{
     
     .enter {
       font-family: "Cute Font", cursive;
-      font-size: 1.2rem;
+      font-size: 2.3rem;
       color: darkslategray;
       background-color: lightblue;
       align-content: center;
       box-shadow: 1px 1px darkblue;
       display: grid;
       margin: auto;
+      padding: 10px;
       min-height: 75px;
       min-width: 250px;
     }
     
     .enter:hover {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       color: lightblue;
       background-color: darkslategray;
     }
