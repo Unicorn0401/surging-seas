@@ -73,7 +73,7 @@ li {
     .landingpageprojecttile{
       font-size: 5rem;
       font-family: 'Cute Font', cursive;
-      color: var(--oceanblue);
+      color:#03222a;
       text-align:center;
       padding-top:10%;
     }
@@ -86,7 +86,6 @@ li {
       text-shadow: 2px 2px whitesmoke;
       max-width: 500px;
       margin: auto;
-      padding-top: 2%;
       padding-bottom: 5%;
     }
     
@@ -101,6 +100,7 @@ li {
       margin: auto;
       min-height: 75px;
       min-width: 250px;
+      margin-bottom: 5%;
     }
     
     .enter:hover {
@@ -311,7 +311,6 @@ input[type="range"] {
     grid-template-columns: 1fr;
   }
 }
-/
 /*Knowledge Section End*/
 /*Learn More Page End*/
 
@@ -360,10 +359,7 @@ input[type="range"] {
 }
 /*Action Led-in ends*/
 
-
-
 /*ACTION CARD SECTION*/
-
 #acs{
   font-family: "Cute Font", cursive;
   font-size: 3em;
@@ -435,8 +431,6 @@ input[type="range"] {
 .actioncard:nth-child(3):before {
   background-image: url(../images/actionpage/Report.png);
 }
-
-
 .actioncontent {
   position: relative;
   display: flex;
@@ -537,7 +531,6 @@ input[type="range"] {
     transition-duration: 0s;
   }
 }
-
 /*ACTION CARD SECTION END*/
 /*TAKE ACTION PAGE END*/
 
@@ -605,6 +598,9 @@ input[type="range"] {
 
 
 /*QUIZ PAGE*/
+.quizbody{
+  background-color: #B9D4E7;
+}
 /* Container divs*/
 .init-page,
 .questions-page,
@@ -629,8 +625,6 @@ input[type="range"] {
   justify-content: center;
 }
 
-
-
 /* Button */
 .btn {
   margin-top:5%;
@@ -644,7 +638,6 @@ input[type="range"] {
   border: none;
   font-family: "Cute Font", cursive;
 }
-
 
 .btn:hover {
   color: lightblue;
@@ -676,8 +669,8 @@ input[type="range"] {
 .questions-page__question {
   padding: 0;
   font-family:'Averia Serif Libre', cursive;
-  font-size: 2.2rem;
-  height: 11rem;
+  font-size: 1.5rem;
+  height: 6rem;
 }
 
 .questions-page__answer-list {
@@ -732,11 +725,11 @@ input[type="range"] {
   margin-bottom: 0.5rem;
 }
 
-.results-page__spanish-btn {
+.results-page__learnmore-btn {
   margin-top: 0.5rem;
 }
 
-.results-page__spanish-btn-link {
+.results-page__learnmore-btn-link {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -867,7 +860,7 @@ input[type="range"] {
 /* APPLYING MEDIA QUERIES */
 @media screen and (max-width: 768px) {
   
-      /* NAVIGATION BAR*/
+    /* NAVIGATION BAR*/
       .menu {
         display:none;
         position: absolute;
@@ -893,16 +886,24 @@ input[type="range"] {
         display: block;
         }
 
-       /* NAVIGATION BAR END*/
+    /* NAVIGATION BAR END*/
+
+    /*ALL PAGES*/
+    .pagecontent{
+      margin-top:100px;
+    }
+
+    /*All PAGES*/
 
 
-       /*LEARN MORE PAGE*/
+    /*LEARN MORE PAGE*/
        .tours img{
         height:300px;
         width:auto;
        }
-      
-      /*PROJECT INTRODUCTION*/
+    
+    /*ABOUT PAGE*/
+    /*PROJECT INTRODUCTION*/
       .pe,.pd{
             width: 100%;
             padding: 40px;
@@ -929,9 +930,17 @@ input[type="range"] {
         }
       /*PROJECT INTRODUCTION END*/
       
+    /*TAKE ACTION PAGE*/
       .action-cards {
         display:gird;
         grid-template-columns: repeat(1, 1fr);
+    }
+    /*TAKE ACTION PAGE END*/
+
+
+    /*QUIZ PAGE*/
+    .init-page__title{
+     font-size: 2 rem;
     }
 
     }

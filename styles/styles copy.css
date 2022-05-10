@@ -623,9 +623,6 @@ li {
         padding: 20px;
     }  
       
-      
-      
-      
       .action-cards{
           grid-template-columns: repeat(1, 1fr);
         }

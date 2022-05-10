@@ -19,7 +19,7 @@ images[2] = 'images/landing/Background3.jpeg';
 
 function changePicture() {
     console.log('running beginning');
-    if (window.location.href == file:///Users/yumi/Documents/bu/2022%20Spring/CM523%20/surging-seas/index.html) {
+    if (window.location.href == Users/yumi/Documents/bu/2022%20Spring/CM523%20/surging-seas/index.html) {
         console.log('running inside');
   document.body.style.backgroundImage = "url(" + images[i] + ")";
 
@@ -30,10 +30,8 @@ function changePicture() {
   }
   setTimeout(changePicture, slideTime);
 }
-
+}
 window.onload = changePicture;
-
-
 
 
 
@@ -45,21 +43,9 @@ $(document).ready(function() {
     });
 });
 
-// Scrolling Effect
-
-$(window).on("scroll", function() {
-    if($(window).scrollTop()) {
-          $('nav').addClass('black');
-    }
-
-    else {
-          $('nav').removeClass('black');
-    }
-})
 
 
-//Learn more about sea level change//
-
+//LEARN MORE PAGE//
 const scale = [0, 1, 2, 3, 5, 7];
 const range = {
   0: {
@@ -120,11 +106,13 @@ function update() {
   $(".tours p").text(range[slideVal].text);
   $(".tours span").text(range[slideVal].rangeText);
 }
+//LEARN MORE PAGE END//
+
 
 
 //Quiz FUNCTION//
 $(document).ready(function(){
-
+    
   // DOM SELECTION ------
   
   // App pages
@@ -411,3 +399,7 @@ $(document).ready(function(){
   
   });
   
+  // Clicking on the spanish button:
+  // Link takes user to Duolingo
+  
+  });
