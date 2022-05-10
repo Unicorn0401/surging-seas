@@ -30,17 +30,18 @@ font-family: 'Square Peg', cursive;
 html {
 	box-sizing: border-box;
         }
-    *, *:before, *:after {
+
+  *, *:before, *:after {
 	box-sizing: inherit;
 
   -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      line-height: 1.6;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing: border-box;
         }
 
 body{
@@ -91,7 +92,7 @@ li {
     
     .enter {
       font-family: "Cute Font", cursive;
-      font-size: 2.3rem;
+      font-size: 1.8rem;
       color: darkslategray;
       background-color: lightblue;
       align-content: center;
@@ -105,12 +106,17 @@ li {
 
     .enter a{
       text-decoration: none;
+      color:#4c9e9e;
     }
     
     .enter:hover {
-      font-size: 2.5rem;
-      color:#019393;
-      background-color:#ead09a;
+      font-size: 2rem;
+      color:#ead09a;
+      background-color:#4c9e9e;
+    }
+
+    .enter a:hover{
+      color:#ead09a;
     }
 
 
