@@ -9,13 +9,13 @@ const typed = new Typed('.typed', {
 });*/
 
 /*Background Changing*/
-const i = 0;
-const images = [];
-const slideTime = 10000; // 10 seconds
+var i = 0;
+var images = [];
+var slideTime = 10000; // 10 seconds
 
-images[0] = '../images/landing/Background1.jpeg';
-images[1] = '../images/landing/Background2.jpeg';
-images[2] = '../images/landing/Background3.png';
+images[0] = './images/landing/Background1.jpeg';
+images[1] = './images/landing/Background2.jpeg';
+images[2] = './images/landing/Background3.png';
 
 function changePicture() {
     console.log('running beginning');
