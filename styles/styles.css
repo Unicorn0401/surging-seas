@@ -190,6 +190,7 @@ body, html {
       color:#01485c;
       }
 
+
       .nav-links a {
       color:#ead09a;
       }
@@ -198,6 +199,12 @@ body, html {
       .projecttitle {
       font-size: 48px;
       font-family: 'Cute Font',cursive;
+      color:#01485c;
+      }
+
+      .projecttitle a{
+        text-decoration: none;
+        color: #01485c;
       }
 
       /* NAVBAR MENU */
@@ -995,6 +1002,11 @@ input[type="range"] {
       padding: 30px;
       background-color: var(--oceanblue);
       color:#5c9ca8;
+      }
+    
+      .projecttitle a{
+        text-decoration: none;
+        color: #88b2bd;
       }
 
     .menu {
