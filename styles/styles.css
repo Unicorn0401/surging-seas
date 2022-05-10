@@ -60,6 +60,7 @@ li {
   }
 
 
+
 /*Landing Page  /*images/landing/Background1.jpg*/
 body, html {
   min-height: 100%;
@@ -82,13 +83,6 @@ body, html {
 .landingpagebody:before, body:after {
   content: "";
   position: absolute;
-}
-
-
-@media (max-height: 450px) {
-  .landingpagebody {
-    font-size: 10px;
-  }
 }
 
 .landingpagecontent {
@@ -392,20 +386,6 @@ input[type="range"] {
   transition: all 0.4s ease;
   transform: translate3D(0, -1px, 0) scale(1.02);
 }
-
-@media only screen and (max-width: 900px) {
-  .knowledge .knowledge_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media only screen and (max-width: 786px) {
-  .knowledge .knowledge_wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
 /*Knowledge Section End*/
 /*Learn More Page End*/
 
@@ -586,47 +566,7 @@ input[type="range"] {
   outline-offset: 3px;
 }
 
-@media (hover: hover) and (min-width: 780px) {
-  .actioncard:after {
-    transform: translateY(0);
-  }
 
-  .actioncontent {
-    transform: translateY(calc(100% - 4.5rem));
-  }
-  .actioncontent > *:not(.actiontitle) {
-    opacity: 0;
-    transform: translateY(1rem);
-  }
-
-  .actioncard:hover,
-.actioncard:focus-within {
-    align-items: center;
-  }
-  .actioncard:hover:before,
-.actioncard:focus-within:before {
-    transform: translateY(-4%);
-  }
-  .actioncard:hover:after,
-.actioncard:focus-within:after {
-    transform: translateY(-50%);
-  }
-  .actioncard:hover .actioncontent,
-.actioncard:focus-within .actioncontent {
-    transform: translateY(0);
-  }
-  .actioncard:hover .actioncontent > *:not(.actiontitle),
-.actioncard:focus-within .actioncontent > *:not(.actiontitle) {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .actioncard:focus-within:before, .actioncard:focus-within:after,
-.actioncard:focus-within .actioncontent,
-.actioncard:focus-within .actioncontent > *:not(.actiontitle) {
-    transition-duration: 0s;
-  }
-}
 /*ACTION CARD SECTION END*/
 /*TAKE ACTION PAGE END*/
 
@@ -970,6 +910,22 @@ input[type="range"] {
 
 
 /* APPLYING MEDIA QUERIES */
+@media only screen and (max-width: 900px) {
+  /*LEARN MORE PAGE*/
+  .knowledge .knowledge_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /*LEARN MORE PAGE*/
+  .knowledge .knowledge_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 768px) {
   
    /*LANDING PAGE*/
@@ -1106,7 +1062,6 @@ input[type="range"] {
 
 
 
-
     /*QUIZ PAGE*/
     .init-page__title{
      font-size: 2 rem;
@@ -1127,6 +1082,48 @@ input[type="range"] {
       font-size: 1.8rem;
     }
     /*QUIZ PAGE END*/
-
     }
+
      
+    /*TAKE ACTION PAGE*/
+    @media (hover: hover) and (min-width: 780px) {
+      .actioncard:after {
+        transform: translateY(0);
+      }
+    
+      .actioncontent {
+        transform: translateY(calc(100% - 4.5rem));
+      }
+      .actioncontent > *:not(.actiontitle) {
+        opacity: 0;
+        transform: translateY(1rem);
+      }
+    
+      .actioncard:hover,
+    .actioncard:focus-within {
+        align-items: center;
+      }
+      .actioncard:hover:before,
+    .actioncard:focus-within:before {
+        transform: translateY(-4%);
+      }
+      .actioncard:hover:after,
+    .actioncard:focus-within:after {
+        transform: translateY(-50%);
+      }
+      .actioncard:hover .actioncontent,
+    .actioncard:focus-within .actioncontent {
+        transform: translateY(0);
+      }
+      .actioncard:hover .actioncontent > *:not(.actiontitle),
+    .actioncard:focus-within .actioncontent > *:not(.actiontitle) {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    
+      .actioncard:focus-within:before, .actioncard:focus-within:after,
+    .actioncard:focus-within .actioncontent,
+    .actioncard:focus-within .actioncontent > *:not(.actiontitle) {
+        transition-duration: 0s;
+      }
+    }
