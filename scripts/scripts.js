@@ -14,12 +14,12 @@ const images = [];
 const slideTime = 10000; // 10 seconds
 
 images[0] = '../images/landing/Background1.jpeg';
-images[1] = 'images/landingpage/Background2.jpeg';
-images[2] = 'images/landingpage/Background3.jpeg';
+images[1] = '../images/landing/Background2.jpeg';
+images[2] = '../images/landing/Background3.png';
 
 function changePicture() {
     console.log('running beginning');
-    if (window.location.href == 'file:///Users/yumi/Documents/bu/2022%20Spring/CM523%20/cm523-surging-seas-yumin-/landingpage.html') {
+    if (window.location.href == 'file:///Users/yumi/Documents/bu/2022%20Spring/CM523%20/surging-seas/index.html') {
         console.log('running inside');
   document.body.style.backgroundImage = "url(" + images[i] + ")";
 
@@ -34,6 +34,7 @@ function changePicture() {
 }
 
 window.onload = changePicture;
+
 
 
 
