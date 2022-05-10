@@ -13,13 +13,13 @@ const i = 0;
 const images = [];
 const slideTime = 10000; // 10 seconds
 
-images[0] = 'images/landing/Background1.jpeg';
-images[1] = 'images/landing/Background2.jpeg';
-images[2] = 'images/landing/Background3.jpeg';
+images[0] = '../images/landing/Background1.jpeg';
+images[1] = 'images/landingpage/Background2.jpeg';
+images[2] = 'images/landingpage/Background3.jpeg';
 
 function changePicture() {
     console.log('running beginning');
-    if (window.location.href == Users/yumi/Documents/bu/2022%20Spring/CM523%20/surging-seas/index.html) {
+    if (window.location.href == 'file:///Users/yumi/Documents/bu/2022%20Spring/CM523%20/cm523-surging-seas-yumin-/landingpage.html') {
         console.log('running inside');
   document.body.style.backgroundImage = "url(" + images[i] + ")";
 
@@ -30,7 +30,9 @@ function changePicture() {
   }
   setTimeout(changePicture, slideTime);
 }
+
 }
+
 window.onload = changePicture;
 
 
@@ -49,42 +51,42 @@ $(document).ready(function() {
 const scale = [0, 1, 2, 3, 5, 7];
 const range = {
   0: {
-    src: "https://dummyimage.com/200x100/000/fff",
+    src: "https://public.flourish.studio/uploads/35777/8a94fbf1-684e-4277-86ea-03b076dffa17.png",
     text:
       "Remember, this is how the Sea Level Map of Boston Looked Like in 2000.",
     rangeText: "Boston Sea Level in 2000"
   },
 
   1: {
-    src: "https://dummyimage.com/200x100/000/fff",
+    src: "https://public.flourish.studio/uploads/35777/9e46d9a1-f513-4092-8636-0f6df41a3378.png",
     text:
       "Under a high-emisions scenario, we should surpass this sea level rise in the Boston area by 2040. Even if we drastically curb emissions, we could see 0.98 feet of sea level rise by then.",
     rangeText: "Sea Level Rise 1 Foot"
   },
 
   2: {
-    src: "https://dummyimage.com/200x100/000/fff",
+    src: "https://public.flourish.studio/uploads/35777/bd6114ff-e9c6-4f21-a6ac-f129c7c238b7.png",
     text:
       "Under a high-emission scenario, we could surpass this sea level rise in the Boston area by 2060. If we drastically curb emission, we could still surpass it by 2090.",
     rangeText: "Sea Level Rise 2 Feet"
   },
 
   3: {
-    src: "https://dummyimage.com/200x100/000/fff",
+    src: "	https://public.flourish.studio/uploads/35777/32690cc6-b5a1-4011-8390-6269583ff1cc.png",
     text:
       "Under a high-emission scenario, we could surpass this sea level rise in the Boston area by 2070. If we drastically curb emission, we could likely avert this level of sea level rise this century.",
     rangeText: "Sea-level rise: 3 feet"
   },
 
   5: {
-    src: "https://dummyimage.com/200x100/000/fff",
+    src: "https://public.flourish.studio/uploads/35777/123a9a8f-3d9b-4221-bcf8-a8c4e4598df9.png",
     text:
       "Under a high-emission scenario, we could surpass this sea level rise in the Boston area by 2090. If we drastically curb emission, we can likely avoid this level of sea level rise this century.",
     rangeText: "Sea-level rise: 5 feet"
   },
 
   7: {
-    src: "https://dummyimage.com/200x100/000/fff",
+    src: "https://public.flourish.studio/uploads/35777/8a16c474-c2ce-4b80-9208-e6b72a56c2d0.png",
     text:
       "Under a high-emission scenario, we could see 6.4 feet of sea level rise in the Boston area by 210. If we drastically curb emission, we can likely avoid this level of sea level rise this century",
     rangeText: "Sea-level rise: 7 feet"
