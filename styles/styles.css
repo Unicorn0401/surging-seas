@@ -194,20 +194,23 @@ li {
 }
 
 .sea-level-change-text{
-  padding-left:10%;
-  padding-right:10%;
+  padding-left:20%;
+  padding-right:20%;
   line-height: 1em;
 }
 
 .tours h3{
   font-family:'square peg',cursive;
   font-weight: bold;
-  font-size:2.5rem;
+  font-size:2rem;
+  margin-top:0px;
+  margin-bottom:0px;
 }
 
 .tours p{
   font-family: 'Averia Serif Libre', cursive;
   font-size: 1rem;
+  padding-top:0px;
 }
 
 .rangeslidercontainer{
@@ -223,6 +226,21 @@ input[type="range"] {
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
   cursor: pointer;
+}
+
+label{
+  font-family:'Averia Serif Libre', cursive;
+  font-size:1.3rem;
+  color:#01ABAA;
+}
+
+input[type="range"] {
+  background: #5c9ca8;
+}
+
+.sea-level-change-text{
+  padding-left:10%;
+  padding-right:10%;
 }
 /*sea level interaction end*/
 
@@ -562,7 +580,7 @@ input[type="range"] {
   font-size: 3rem;
   line-height: 2rem;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -590,11 +608,20 @@ input[type="range"] {
   color: royalblue;
 }
 
+.signthepetition a{
+  text-decoration: none;
+  color:#01485c
+}
 .signthepetition:hover {
   font-size: 2rem;
   color: lightblue;
   background-color: darkslategray;
 }
+
+.signthepetition a:hover{
+  color:#B9D4E7;
+}
+
 /*PETITION PAGE END*/
 
 
@@ -738,6 +765,9 @@ input[type="range"] {
   color: rgba(0, 0, 0, 0.87);
 }
 
+.results-page__learnmore-btn a{
+  color:#01485c;
+}
 
 
 
@@ -865,7 +895,16 @@ input[type="range"] {
 @media screen and (max-width: 768px) {
   
     /* NAVIGATION BAR*/
-      .menu {
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px;
+      background-color: var(--oceanblue);
+      color:#5c9ca8;
+      }
+
+    .menu {
         display:none;
         position: absolute;
         background-color: var(--oceanblue);
@@ -905,6 +944,20 @@ input[type="range"] {
         height:300px;
         width:auto;
        }
+
+       .sea-level-change-instruction{
+         padding-top:70px;
+       }
+    
+      #slider{
+        width: 60%;
+      }
+
+      #label{
+        font-size:0.6rem;
+      }
+
+
     
     /*ABOUT PAGE*/
     /*PROJECT INTRODUCTION*/
@@ -946,6 +999,22 @@ input[type="range"] {
     .init-page__title{
      font-size: 2 rem;
     }
+
+    .init-page,
+    .questions-page,
+    .results-page{
+      padding-top:100px;
+      margin-top:100px;
+    }
+
+    .questions-page__question{
+      font-size:1.2rem;
+    }
+    
+    .questions-page__answer-list{
+      font-size 1.8rem;
+    }
+    
 
     }
      
