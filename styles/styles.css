@@ -61,63 +61,123 @@ li {
 
 
 /*Landing Page  /*images/landing/Background1.jpg*/
+body, html {
+  min-height: 100%;
+  height: 100%;
+}
 
-.landingpagebackground {
+.landingpagebody {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: #ececec;
+  font-family: Quattrocento, serif;
+  line-height: 1.8925;
   background-image: url(../images/landing/Background1.jpeg);
-   background-repeat: no-repeat;
-    }
-    
-    .landingpagebackground::after {
-      opacity: 0.75;
-    }
-    
-    .landingpageprojecttile{
-      font-size: 5rem;
-      font-family: 'Cute Font', cursive;
-      color:#03222a;
-      text-align:center;
-      padding-top:10%;
-    }
-    
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.landingpagebody:before, body:after {
+  content: "";
+  position: absolute;
+}
 
-    .landingpagetext {
-      font-family: 'Averia Serif Libre', cursive;
-      font-size: 1.2rem;
-      text-align: center;
-      text-shadow: 2px 2px whitesmoke;
-      max-width: 500px;
-      margin: auto;
-      padding-bottom: 5%;
-    }
-    
-    .enter {
-      font-family: "Cute Font", cursive;
-      font-size: 1.8rem;
-      color: darkslategray;
-      background-color: lightblue;
-      align-content: center;
-      box-shadow: 1px 1px darkblue;
-      display: grid;
-      margin: auto;
-      min-height: 75px;
-      min-width: 250px;
-      margin-bottom: 5%;
-    }
 
-    .enter a{
-      text-decoration: none;
-      color:#4c9e9e;
-    }
-    
-    .enter:hover {
-      font-size: 2rem;
-      color:#ead09a;
-      background-color:#4c9e9e;
-    }
+@media (max-height: 450px) {
+  .landingpagebody {
+    font-size: 10px;
+  }
+}
 
-    .enter a:hover{
-      color:#ead09a;
-    }
+.landingpagecontent {
+  position: relative;
+  max-width: 700px;
+  z-index: 1;
+  padding: 4%;
+  text-align: center;
+}
+
+.landingpageprojectdetails{
+    font-family:'Averia Serif Libre', cursive;
+    font-size:1.5rem;
+    color:#ececec;
+    margin-bottom:0px;
+}
+
+.landingpageprojecttile {
+  margin-top: 7%;
+  font-family:"Cute Font", cursive;
+  font-size: 4em;
+  font-weight: bold;
+  color:#1a1a1a;
+  letter-spacing: 2px;
+  line-height: 1.125;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom:0px;
+}
+
+.landingpagetext {
+  position: relative;
+  letter-spacing: 1px;
+  text-align:center;
+  font-family:'Square Peg',cursive;
+  font-weight:bold;
+  font-size:1.7rem;
+  line-height: 2.5rem;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  color:#ead09a;
+}
+
+.landingpagetext:before, .landingpagetext:after {
+  mix-blend-mode: difference;
+  content: "";
+  position: absolute;
+  left: calc(25% / 2);
+  width: 75%;
+  height: 1px;
+}
+.landingpagetext:before {
+  top: 0;
+}
+.landingpagetext:after {
+  bottom: 0;
+}
+
+.enter {
+  font-family: "Cute Font", cursive;
+  font-size: 1.5rem;
+  color:#5c9ca8;
+  background-color: #5c9ca8;
+  align-content: center;
+  display: grid;
+  margin: auto;
+  min-height: 75px;
+  min-width: 250px;
+  margin-bottom: 5%;
+  box-shadow: none;
+}
+
+.enter a{
+  text-decoration: none;
+  color:white;
+}
+
+.enter:hover {
+  font-size: 1.6rem;
+  color:#88b2bd;
+  background-color:#019393;
+  box-shadow: none;
+}
+
+.enter a:hover{
+  color:#03222a;
+}
+/*LANDING PAGE END*/
+
 
 
 /*Naviagtion Bar*/
@@ -361,7 +421,7 @@ input[type="range"] {
 #takeaction{
   font-family: "Cute Font";
   font-size: 3em;
-  color:#03222a;
+  color:whitesmoke;
   display: inline-block;
   padding-bottom: 10px;
   border-bottom: 4px solid;
