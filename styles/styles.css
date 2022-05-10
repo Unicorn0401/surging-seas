@@ -4,41 +4,36 @@
 
 /*Import Fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Cute+Font&family=M+PLUS+Rounded+1c&family=Rubik+Glitch&family=Square+Peg&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Cute+Font&family=M+PLUS+1&family=M+PLUS+Rounded+1c&family=Rubik+Glitch&family=Square+Peg&display=swap');
 
 /*Fonts Reference*/
-/* font-family: 'Averia Serif Libre', cursive;
+/* 
+font-family: 'Averia Serif Libre', cursive;
 font-family: 'Cute Font', cursive;
+font-family: 'M PLUS 1', sans-serif;
 font-family: 'M PLUS Rounded 1c', sans-serif;
 font-family: 'Rubik Glitch', cursive;
-font-family: 'Square Peg', cursive;*/
+font-family: 'Square Peg', cursive;
+*/
 
 /*Define Colors*/
-      :root {
+  :root {
             --deepblue: #03222a;
-            --oceanblue: #03485c;
-            --bluegreen: #2c727f;
-            --dustyblue: #66888f;
-            --lightyellow: #e8ca8d;}
+            --oceanblue: #01485c;
+            --bluegreen: #5c9ca8;
+            --dustyblue: #88b2bd;
+            --lightyellow: #ead09a;
+          }
 
 /*General Settings*/
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      }
-      body {
-      font-family: 'Open Sans', sans-serif;
-      }
-      a {
-      text-decoration: none;
-      }
-      li {
-      list-style: none;
-      }
 
-html{
-      -webkit-font-smoothing: antialiased;
+html {
+	box-sizing: border-box;
+        }
+    *, *:before, *:after {
+	box-sizing: inherit;
+
+  -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       line-height: 1.6;
       -webkit-background-size: cover;
@@ -46,9 +41,22 @@ html{
       -o-background-size: cover;
       background-size: cover;
       box-sizing: border-box;
-      font-size: 16px;
+        }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Source Sans Pro, "Open Sans";
+    font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+  }
+
+li {
+  list-style: none;
+  }
 
 
 /*Landing Page  /*images/landing/Background1.jpg*/
@@ -69,6 +77,7 @@ html{
       text-align:center;
       padding-top:10%;
     }
+    
 
     .landingpagetext {
       font-family: 'Averia Serif Libre', cursive;
@@ -77,7 +86,7 @@ html{
       text-shadow: 2px 2px whitesmoke;
       max-width: 500px;
       margin: auto;
-      padding-top: 5%;
+      padding-top: 2%;
       padding-bottom: 5%;
     }
     
@@ -90,13 +99,12 @@ html{
       box-shadow: 1px 1px darkblue;
       display: grid;
       margin: auto;
-      padding: 10px;
       min-height: 75px;
       min-width: 250px;
     }
     
     .enter:hover {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       color: lightblue;
       background-color: darkslategray;
     }
@@ -108,24 +116,25 @@ html{
       align-items: center;
       justify-content: space-between;
       padding: 30px;
-      background-color: var(--oceanblue);
-      color: var(--dustyblue);
+      background-color: #5c9ca8;
+      color:#01485c;
       }
 
       .nav-links a {
-      color: var(--lightyellow);
+      color:#ead09a;
       }
 
       /* PROJECT TITLE */
       .projecttitle {
       font-size: 48px;
-      font-family: 'Square Peg';
+      font-family: 'Cute Font',cursive;
       }
 
       /* NAVBAR MENU */
       .menu {
       display: flex;
       gap: 1em;
+      font-family:'Averia Serif Libre', cursive ;
       font-size: 18px;
       }
       .menu li:hover {
@@ -154,6 +163,444 @@ html{
 
 
 
+/*Learn More Page*/
+
+/*seal-leve interaction*/
+.tours {
+  text-align: center;
+}
+
+.tours img{
+ height:400px;
+ width:auto;
+}
+
+.sea-level-change{
+  margin-left:5%;
+  margin-right:5%;
+  display: blcok;
+}
+
+.sea-level-change-instruction {
+  margin-top:5%;
+  font-family:'Cute Font',Cursive;
+  font-size:3 rem;
+  line-height: 1.5rem;
+  color:#5c9ca8;
+}
+
+.sea-level-change-text{
+  padding-left:10%;
+  padding-right:10%;
+  line-height: 1em;
+}
+
+.tours h3{
+  font-family:'square peg',cursive;
+  font-weight: bold;
+  font-size:2.5rem;
+}
+
+.tours p{
+  font-family: 'Averia Serif Libre', cursive;
+  font-size: 1rem;
+}
+
+.rangeslidercontainer{
+  text-align: center;
+}
+
+/*important function for the image and text switch*/
+input[type="range"] {
+  width: 500px;
+  height: 25px;
+  background: #ddd;
+  z-index: 99;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+/*sea level interaction end*/
+
+/*Kowledge Section*/
+.sea-level-rise-knowledge-section{
+  background-color: #88b2bd;
+}
+
+.knowledge {
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.knowledge .knowledge_title {
+  margin-top: 40px;
+  padding-top:5%;
+  color:#03222a;
+  font-family: "Cute Font",cursive;
+  font-size: 1.5em;
+}
+
+.knowledge .knowledge_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  width: 100%;
+  justify-content: center;
+}
+.knowledge .knowledge_wrapper .knowledge_item {
+  margin: 0px 20px 40px;
+  min-height: 300px;
+  background: #fff 50%;
+  background-size: cover;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+  transition: all 0.5s ease;
+}
+.knowledge .knowledge_wrapper .knowledge_item a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+}
+.knowledge .knowledge_wrapper .knowledge_item .ki_img {
+  height: 200px;
+  margin: 0px 0px 20px;
+  overflow: hidden;
+}
+.knowledge .knowledge_wrapper .knowledge_item .ki_img img {
+  width: 90%;
+}
+.knowledge .knowledge_wrapper .knowledge_item .ki_title {
+  font-family:"square peg",cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  color:#03222a;
+  margin: 1.5em 0 0.5em;
+}
+.knowledge .knowledge_wrapper .knowledge_item .ki_content {
+  padding: 20px;
+  font-family:'M PLUS 1', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  color: #999999;
+}
+.knowledge .knowledge_wrapper .knowledge_item .learn_more {
+  font-family: 'Averia Serif Libre', cursive;
+  color:#5c9ca8;
+  font-size: 0.9rem;
+  line-height: 33px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.knowledge .knowledge_wrapper .knowledge_item:hover {
+  box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07), 1px 6px 12px rgba(39, 44, 49, 0.04);
+  transition: all 0.4s ease;
+  transform: translate3D(0, -1px, 0) scale(1.02);
+}
+
+@media only screen and (max-width: 900px) {
+  .knowledge .knowledge_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .knowledge .knowledge_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/
+/*Knowledge Section End*/
+/*Learn More Page End*/
+
+
+
+/*ACTION PAGE*/
+/*Action Led-in*/
+.actionpage{
+  text-align: center;
+}
+
+.action-section{
+  background-image:url(../images/actionpage/bostonundersea.jpeg);
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#takeaction{
+  font-family: "Cute Font";
+  font-size: 3em;
+  color:#03222a;
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 4px solid;
+}
+
+#takeactiontext{
+  font-family:'Averia Serif Libre', cursive;
+  font-size: 1.3em;
+  color:#e8ca8d;
+  display:grid;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 4px;
+}
+
+.action-inner-width{
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  padding-top: 88px;
+  color: var(--deepblue);
+  overflow: hidden;
+}
+/*Action Led-in ends*/
+
+
+
+/*ACTION CARD SECTION*/
+
+#acs{
+  font-family: "Cute Font", cursive;
+  font-size: 3em;
+  display: inline-block;
+  margin-bottom: 20px;
+  border-bottom: 4px solid;
+  color:#019393;
+  text-align: center;
+}
+
+.actions-list{
+  background-color: #fff;
+}
+
+.action-cards {
+  margin-top:5%;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1500px;
+  font-family: var(--font-sans);
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+.actioncard {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+.actioncard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  pointer-events: none;
+}
+.actioncard:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+.actioncard:nth-child(1):before {
+  background-image: url(../images/actionpage/Quiz.jpeg);
+}
+.actioncard:nth-child(2):before {
+  background-image: url(../images/actionpage/Petition.jpeg);
+}
+.actioncard:nth-child(3):before {
+  background-image: url(../images/actionpage/Report.png);
+}
+
+
+.actioncontent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+.actioncontent > * + * {
+  margin-top: 1rem;
+}
+
+.actiontitle {
+  font-family: 'Averia Serif Libre', cursive;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color:#03222a;
+  text-shadow: 2px 2px whitesmoke;
+}
+
+.actioncopy {
+  font-family: 'Square Peg', cursive;
+  font-size: 1.9rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+.actionbtn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1.8rem;
+  font-family: 'Cute Font', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color:#ddeeff;
+  background-color:#4c9e9e;
+  border: none;
+}
+
+.actionbtn a {
+ text-decoration:none;
+ color:#B9D4E7;
+}
+
+.actionbtn:hover {
+  background-color:#03222a;
+  color:#01ABAA;
+  font-weight:500;
+}
+.actionbtn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+@media (hover: hover) and (min-width: 780px) {
+  .actioncard:after {
+    transform: translateY(0);
+  }
+
+  .actioncontent {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .actioncontent > *:not(.actiontitle) {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  .actioncard:hover,
+.actioncard:focus-within {
+    align-items: center;
+  }
+  .actioncard:hover:before,
+.actioncard:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .actioncard:hover:after,
+.actioncard:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .actioncard:hover .actioncontent,
+.actioncard:focus-within .actioncontent {
+    transform: translateY(0);
+  }
+  .actioncard:hover .actioncontent > *:not(.actiontitle),
+.actioncard:focus-within .actioncontent > *:not(.actiontitle) {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .actioncard:focus-within:before, .actioncard:focus-within:after,
+.actioncard:focus-within .actioncontent,
+.actioncard:focus-within .actioncontent > *:not(.actiontitle) {
+    transition-duration: 0s;
+  }
+}
+
+/*ACTION CARD SECTION END*/
+/*TAKE ACTION PAGE END*/
+
+
+
+
+
+/*PETITION PAGE*/
+.petitioncontainer {
+  display:block;
+  padding-top:5%;
+  padding-left:10%;
+  padding-right:10%;
+  position:realative
+}
+
+.petitionpic{
+  width:100%;
+  height:auto;
+}
+
+.petitiontitle {
+  font-family: 'Cute Font', cursive ;
+  color:white;
+  font-size: 3rem;
+  line-height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.signthepetition {
+  color: darkslategray;
+  background-color: lightblue;
+  align-content: center;
+  box-shadow: 1px 1px darkblue;
+  font-size: 1.8rem;
+  font-family: "Cute Font", cursive;
+  display: grid;
+  margin: auto;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.hatchshelltext {
+  text-align: center;
+  font-family:'Averia Serif Libre', cursive;
+  font-size: 18px;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: royalblue;
+}
+
+.signthepetition:hover {
+  font-size: 2rem;
+  color: lightblue;
+  background-color: darkslategray;
+}
+/*PETITION PAGE END*/
+
+
 
 
 
@@ -162,37 +609,42 @@ html{
 .init-page,
 .questions-page,
 .results-page {
-  margin:30px;
-  height: 100%;
+  margin:40px;
+  height:80%;
   align-items: center;
+  background-color:#B9D4E7;
+}
+.init-page{
+  background-image: url(../images/quizpage/TYRF76VE5MI6TKM5KT3RK4TRNE.jpeg);
 }
 
 .container {
   width: 90%;
   height: 100%;
   max-width: 40rem;
-  margin: 30px;
+  margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+
+
 /* Button */
 .btn {
-  margin: 2rem auto 0;
+  margin-top:5%;
+  margin-bottom:10%;
   display: block;
   width: 100%;
-  font-size: 2.5rem;
-  padding: 1.5rem 0;
-  background: #01ABAA;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  color:#01485c;
+  background-color:#88b2bd;
   border: none;
   font-family: "Cute Font", cursive;
 }
 
-.btn {
-  background: #019393;
-}
 
 .btn:hover {
   color: lightblue;
@@ -200,95 +652,124 @@ html{
 }
 
 
+
 /* TITLE PAGE */
+
 .init-page__title {
-  margin: 0;
+  margin-top:5%;
+  margin-bottom:30px;
   font-family: "Cute Font";
-  font-size: 8rem;
+  font-size: 4rem;
 }
-.init-page__icon {
-  font-size: 20rem;
-  margin: 0;
+
+.init-page_instruction{
+  display:block;
+  padding-top:10px;
+  padding-bottom:30px;
+  font-family:'Averia Serif Libre', cursive;
+  font-size: 2rem;
+  color:whitesmoke;
 }
 
 /* QUESTIONS PAGE*/
+
 .questions-page__question {
   padding: 0;
+  font-family:'Averia Serif Libre', cursive;
   font-size: 2.2rem;
   height: 11rem;
 }
+
 .questions-page__answer-list {
   padding: 0;
   list-style-type: none;
+  font-family:'Square Peg', Cursive;
   font-size: 2rem;
+  font-weight: bold;
   line-height: 5rem;
 }
+
 .questions-page__answer-line {
   margin: 0 auto;
   width: 75%;
   cursor: pointer;
 }
+
 .questions-page__selection-div {
   float: left;
   padding-left: 1rem;
   font-size: 2.75rem;
 }
+
 .questions-page__feedback-div {
   float: right;
   padding-right: 1rem;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
 }
+
 .questions-page--correct {
   background: #76B574;
 }
+
 .questions-page--incorrect {
   background: #FEA680;
 }
+
 .btn-holder {
-  height: 6rem;
+  height: 4rem;
 }
 
 /* RESULTS PAGE */
+
 .results-page__info {
+  font-family: 'Cute Font',cursive;
   font-size: 3rem;
 }
+
 .results-page__score {
-  font-size: 10rem;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  font-family: 'Square Peg',cursive;
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
 }
+
 .results-page__spanish-btn {
-  margin-top: 3rem;
+  margin-top: 0.5rem;
 }
+
 .results-page__spanish-btn-link {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.87);
 }
 
+
+
+
+
 /*ABOUT PAGE*/
 /*about team*/
 .team-section{
-      background: var(--dustyblue);
-        text-align: center;
+      background:#03222a;
+      text-align: center;
       padding-top: 80px;
       padding-bottom: 80px;
   }
   
   .team-section h1{
       font-family: "Cute Font";
-      font-size: 2em;
-      color: var(--lightyellow);
+      font-size: 3em;
+      color:#ead09a;
       display: inline-block;
       padding-bottom: 10px;
       border-bottom: 4px solid;
   }
   
+
   .inner-width{
       max-width: 1200px;
       margin: auto;
       padding: 40px;
       padding-top: 88px;
-      color: var(--deepblue);
+      color:#03222a;
       overflow: hidden;
   }
   
@@ -299,20 +780,26 @@ html{
       padding: 80px 0;
       margin-top: 20px;
       transition: 0.4s;
+      font-family:'Averia Serif Libre', cursive;
+      font-size:2 rem;
+      font-weight: bold;
+      color:#B9D4E7;
+      
   }
   
   .pe:hover{
       background: beige;
-
+      color:#4c9e9e;
   }
   
+
   .team-section img{
       width: 150px;
       height: 150px;
   }
-  
+
   .name{
-      color: var(--deepblue);
+      color:#019393;
       margin: 16px 0;
       text-transform: uppercase;
   }
@@ -321,8 +808,8 @@ html{
 
   /*project document*/
   #docs{
-      font-family: "Source Sans Pro";
-      font-size: 2em;
+      font-family: "Cute Font", cursive;
+      font-size: 3em;
       display: inline-block;
       margin-bottom: 40px;
       padding-top: 40px;
@@ -343,22 +830,26 @@ html{
   }
   
   .pd:hover{
-      background: var(--dustyblue);
+      background:#f0f8ff;
   }
   
   .dname{
       text-transform: uppercase;
       padding-top: 20px;
-      color: var(--deepblue);
+      color:#03222a;
+      font-family:'Averia Serif Libre', cursive;
+      font-size:1.3rem;
   }
 
   .introduction{
-        color:var(--lightyellow);
-        padding: 20px;
+    font-family: 'M PLUS 1', sans-serif; 
+    font-size:1 rem;
+    color:grey;
+    padding: 20px;
   }
   
   .dname:hover{
-      color: var(--deepblue);
+      color:#ead09a;
   }
   
   .project-doc img{
@@ -373,152 +864,43 @@ html{
 
 
 
-
-
-
-
-
-
-
-
-
-
-/*
-.card {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-between;
-    }
-    
-.proposalintro {
-      background-color: lightblue;
-      color: royalblue;
-    }
-
-
-.proposalheadline {
-      padding-top: 20px;
-      text-align: center;
-      font-family: "Cute Font", cursive;
-      color: royalblue;
-      font-size: 2rem;
-    }
-    
-.proposalpagetext {
-      text-align: center;
-      font-size: 18px;
-      color: royalblue;
-      font-family: "Indie Flower";
-    }
-    
-.titlesubtext {
-      color: whitesmoke;
-      font-family: "Square Peg", cursive;
-    }
-
-    .proposal {
-      color: lightblue;
-      background-color: darkblue;
-      box-shadow: 1px 1px lightblue;
-      font-size: 1.6rem;
-      font-family: "Cute Font", cursive;
-    }
-    
-    .proposal:hover {
-      color: darkblue;
-      background-color: skyblue;
-    }
-    
-    .designdocumentation {
-      color: lightblue;
-      background-color: royalblue;
-      box-shadow: 1px 1px lightblue;
-      font-size: 1.6rem;
-      font-family: "Cute Font", cursive;
-      margin: 5px;
-    }
-    
-    .designdocumentation:hover {
-      color: lightblue;
-      background-color: darkslateblue;
-    }
-    
-    .uxreport {
-      color: darkblue;
-      background-color: lightblue;
-      box-shadow: 1px 1px lightblue;
-      font-size: 1.6rem;
-      font-family: "Cute Font", cursive;
-    }
-    
-    .uxreport:hover {
-      color: skyblue;
-      background-color: darkblue;
-    }
-    
-    .designdocumentationintrotext {
-      background: skyblue;
-      color: darkblue;
-      border: dashed royalblue;
-    }
-    
-    .proposalintro {
-      background: lightblue;
-      color: royalblue;
-      border: dashed darkblue;
-      padding: 5px;
-    }
-    
-    .uxreportintro {
-      background: royalblue;
-      color: lightblue;
-      border: dashed lightblue;
-      padding: 5px;
-    }
-    
-    .proposalbackground {
-      background: beige;
-    }
-    
-    .proposalpagecontainer {
-      display: grid;
-      grid-row-gap: 1em;
-      font-family: "Square Peg", cursive;
-      font-size: 1.8rem;
-      text-align: center;
-    }
-
-    */
-
 /* APPLYING MEDIA QUERIES */
-      @media (max-width: 768px) {
-
+@media screen and (max-width: 768px) {
+  
       /* NAVIGATION BAR*/
       .menu {
-      display:none;
-      position: absolute;
-      background-color: var(--oceanblue);
-      right: 0;
-      left: 0;
-      text-align: center;
-      padding: 16px 0;
-      }
-      .menu li:hover {
-      display: inline-block;
-      background-color: var(--bluegreen);
-      transition: 0.3s ease;
-      }
-      .menu li + li {
-      margin-top: 12px;
-      }
-      input[type=checkbox]:checked ~ .menu{
-      display: block;
-      }
-      .hamburger {
-      display: block;
-      }
+        display:none;
+        position: absolute;
+        background-color: var(--oceanblue);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        }
+
+        .menu li:hover {
+        display: inline-block;
+        background-color:#4c9e9e;
+        transition: 0.3s ease;
+        }
+        .menu li + li {
+        margin-top: 12px;
+        }
+        input[type=checkbox]:checked ~ .menu{
+        display: block;
+        }
+        .hamburger {
+        display: block;
+        }
 
        /* NAVIGATION BAR END*/
+
+
+       /*LEARN MORE PAGE*/
+       .tours img{
+        height:300px;
+        width:auto;
+       }
       
       /*PROJECT INTRODUCTION*/
       .pe,.pd{
@@ -546,7 +928,11 @@ html{
             padding: 20px;
         }
       /*PROJECT INTRODUCTION END*/
+      
+      .action-cards {
+        display:gird;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-
-      }
+    }
      

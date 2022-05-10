@@ -1,0 +1,13 @@
+.tours {
+  align-items: center;
+}
+
+input[type="range"] {
+  width: 500px;
+  height: 25px;
+  background: #ddd;
+  z-index: 99;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}

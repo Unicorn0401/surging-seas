@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- PUT A TITLE IN HERE -->
+    <title>SURGING SEA</title>
+    <!-- PUT A DESCRIPTION IN HERE -->
+    <meta name="suring-sea-learn-more-page" content="Check the sea level rise trend in Boston and learn the related knowledge." />
+    <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
+    <link rel="stylesheet" href="styles.normalize.css" />
+    <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
+    <!-- LINK TO YOUR STYLES -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
+    <script src="scripts/test.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="projecttitle">SURGING SEAS</div>
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+      <li><a href="About.html">ABOUT US</a></li>
+      <li><a href="Learnmore.html">LEARN FACTS</a></li>
+      <li><a href="Takeactionpage.html">TACK ACTIONS</a></li>
+      </div>
+      </ul>
+      </nav>
+
+      <!--PORJECT INTRODUCTION-->
+<div class="sea-level-rise-interaction-section">
+<div class='tours'>
+  <h1 class="sea-level-change-instruction"> Slide the Button to Explore </h1>
+  <div class="sea-level-change">
+    <img class="sea-level-change-map">
+  </div>
+  <div>
+    <h3 class="sea-level-change-title"></h3>
+    <p class="sea-level-change-text"></p>
+  </div>
+</div>
+<div class="rangeslidercontainer">
+  <form class="range slider" action="">
+  <input type="range" id="slider" min="0" max="7" step="1">
+</form>
+</div>
+</div>
+
+<div class="sea-level-rise-knowledge-section">
+<div class="knowledge">
+  <div class="knowledge_title">
+    <h1>Knowledge About Sea Level Rise</h1>
+  </div>
+  <div class="knowledge_wrapper">
+
+    <div class="knowledge_item">
+      <a href="#">
+        <div class="ki_img"><img src="images/learnmorepage/knowledge-reason.jpeg"></div>
+        <div class="ki_title">Why Are Sea Levels Rising?</div>
+        <div class="ki_content">While there are four main causes of sea level rise in Massachusetts, changes in ocean circulation and ice melt are the largest contributors. Because the rate of ice melt has been increasing significantly since 1992, and changes in ocean circulation are causing coastal storms such as Nor’easters to increase in frequency and intensity, Massachusetts is particularly vulnerable to sea level rise.</div>
+        <div class="learn_more"> <a href="https://sealevelrise.org/causes/"> LEARN MORE </a></div>
+      </a>
+    </div>
+    <div class="knowledge_item">
+      <a href="#">
+        <div class="ki_img"><img src="images/learnmorepage/knowledge-risk.jpeg"></div>
+        <div class="ki_title">What's at Risk in Massachusetts?</div>
+        <div class="ki_content">Sea level rise can push water further inland and into tidal estuaries, causing saltwater to intrude into the coastal ecosystem and the porous rock that freshwater travels through underground. Not only can this affect drinking water, but saltwater intrusion can ruin the habitats of many bird and fish species for which Massachusetts coastal wetlands provide sanctuary. Sea level rise also puts beaches and dunes at risk.</div>
+        <div class="learn_more"> <a href="https://sealevelrise.org/states/massachusetts/"> LEARN MORE </a></div>
+      </a>
+    </div>
+    <div class="knowledge_item">
+      <a href="#">
+        <div class="ki_img"><img src="images/learnmorepage/knowledge-action.jpeg"></div>
+        <div class="ki_title">How Can We Combat Sea Level Rise?</div>
+        <div class="ki_content">Individual voices and actions can add up and make the difference between whether we achieve constructive action or enable catastrophic delay. We can: 1.Cut down your carbon footprint. 2.Get involved and volunteer with a conservation organization near you. 3.Visit coastal communities, and support those businesses that are already climate aware. 4.Support policies that support mitigation of climate change.
+        </div>
+        <div class="learn_more"> <a href="https://sealevelrise.org/solutions/"> LEARN MORE </a> </div>
+      </a>
+    </div>
+</div>
+</div>
+</div>
+
+    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
+  </body>
+</html>
