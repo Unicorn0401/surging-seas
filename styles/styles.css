@@ -217,8 +217,8 @@ body, html {
       }
       
 
-      /*RESPONSIVE NAVBAR MENU STARTS*/
-      /* CHECKBOX HACK */
+    /*RESPONSIVE NAVBAR MENU STARTS*/
+    /* CHECKBOX HACK */
       input[type=checkbox]{
       display: none;
       }
@@ -578,6 +578,7 @@ input[type="range"] {
   outline: 1px dashed yellow;
   outline-offset: 3px;
 }
+
 @media (hover: hover) and (min-width: 780px) {
   .actioncard:after {
     transform: translateY(0);
@@ -645,6 +646,7 @@ input[type="range"] {
   color:white;
   font-size: 3rem;
   line-height: 2rem;
+  text-align: center;
   position: absolute;
   top: 70%;
   left: 50%;
@@ -963,6 +965,28 @@ input[type="range"] {
 /* APPLYING MEDIA QUERIES */
 @media screen and (max-width: 768px) {
   
+   /*LANDING PAGE*/
+   .landingpagecontent{
+     max-width:500px;
+     margin-left:7%;
+     margin-right:7%;
+   }
+
+   .landingpageprojecttile{
+     font-size:2.8 rem;
+   }
+
+   .landingpageprojectdetails{
+     max-width:500 px;
+     font-size:1.3rem;
+   }
+
+   .enter a{
+     font-size:1.3rem
+   }
+   /*LANDING PAGE END*/
+
+
     /* NAVIGATION BAR*/
     .navbar {
       display: flex;
@@ -983,33 +1007,33 @@ input[type="range"] {
         padding: 16px 0;
         }
 
-        .menu li:hover {
+    .menu li:hover {
         display: inline-block;
         background-color:#4c9e9e;
         transition: 0.3s ease;
         }
-        .menu li + li {
+    .menu li + li {
         margin-top: 12px;
         }
         input[type=checkbox]:checked ~ .menu{
         display: block;
         }
-        .hamburger {
-        display: block;
-        }
 
+    .hamburger {
+        display: block;
+    }
     /* NAVIGATION BAR END*/
 
-    /*ALL PAGES*/
+
+    /*ALL PAGES (TO AVOID THE OVERLAP BETWEEN CONTENT AND NAV BAR*/
     .pagecontent{
       margin-top:100px;
     }
-
     /*All PAGES*/
 
 
     /*LEARN MORE PAGE*/
-       .tours img{
+    .tours img{
         height:300px;
         width:auto;
        }
@@ -1018,51 +1042,57 @@ input[type="range"] {
          padding-top:70px;
        }
     
-      #slider{
+    #slider{
         width: 60%;
       }
 
-      #label{
+    #label{
         font-size:0.6rem;
       }
+    /*LEARN MORE PAGE END*/
 
 
     
     /*ABOUT PAGE*/
     /*PROJECT INTRODUCTION*/
-      .pe,.pd{
+    .pe,.pd{
             width: 100%;
             padding: 40px;
         }
 
-        #pro{
+    #pro{
             padding: 40px 20px 80px 20px;
         }
         
-        #meetteam, #docs{
+    #meetteam, #docs{
             font-size: 3em;
             border: none;
             text-align: center;
         }
         
-        #docs{
+    #docs{
             padding-top:0;
             padding-bottom: 90px;
             margin-bottom: 10px;
         }
         
-        .pd{
+    .pd{
             padding: 20px;
         }
         
       /*PROJECT INTRODUCTION END*/
+      /*ABOUT PAGE END*/
       
+
+
     /*TAKE ACTION PAGE*/
-      .action-cards {
+    .action-cards {
         display:gird;
         grid-template-columns: repeat(1, 1fr);
     }
     /*TAKE ACTION PAGE END*/
+
+
 
 
     /*QUIZ PAGE*/
@@ -1082,9 +1112,9 @@ input[type="range"] {
     }
     
     .questions-page__answer-list{
-      font-size 1.8rem;
+      font-size: 1.8rem;
     }
-    
+    /*QUIZ PAGE END*/
 
     }
      
