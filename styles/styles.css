@@ -506,6 +506,7 @@ input[type="range"] {
 .actioncard:nth-child(3):before {
   background-image: url(../images/actionpage/Report.png);
 }
+
 .actioncontent {
   position: relative;
   display: flex;
@@ -513,7 +514,6 @@ input[type="range"] {
   align-items: center;
   width: 100%;
   padding: 1rem;
-  transition: transform var(--d) var(--e);
   z-index: 1;
 }
 .actioncontent > * + * {
