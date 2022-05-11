@@ -19,7 +19,7 @@ images[2] = './images/landing/Background3.jpeg';
 
 function changePicture() {
     console.log('running beginning');
-    if (window.location.href == 'file:///Users/yumi/Documents/bu/2022%20Spring/CM523%20/surging-seas/index.html') {
+    if (window.location.href == 'https://unicorn0401.github.io/surgingseaboston/') {
         console.log('running inside');
   document.body.style.backgroundImage = "url(" + images[i] + ")";
 
