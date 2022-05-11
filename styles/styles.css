@@ -103,7 +103,7 @@ body, html {
 .landingpageprojecttile {
   margin-top: 7%;
   font-family:"Cute Font", cursive;
-  font-size: 4em;
+  font-size: 3.8em;
   font-weight: bold;
   color:#1a1a1a;
   letter-spacing: 2px;
@@ -1131,7 +1131,20 @@ input[type="range"] {
 
 
 @media screen and (max-width: 500px){
+  /*LANDING PAGE*/
+  .landingpageprojecttile{
+    font-size:2.5 rem;
+    line-height:2rem;
+  }
 
+  .landingpagetext{
+    font-size:1.7rem;
+    line-height: 2.1rem;
+  }
+
+  /*LANDIGN PAGE END*/
+  
+  
   /*LEARN MORE PAGE*/
 
   .tours img{
