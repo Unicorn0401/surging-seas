@@ -1127,3 +1127,22 @@ input[type="range"] {
         transition-duration: 0s;
       }
     }
+
+
+@media screen and (max-width: 600px){
+
+  /*LEARN MORE PAGE*/
+
+  .tours img{
+    height:200px;
+    width:auto;
+   }
+
+//* LEARN MORE PAGE END*/
+
+
+
+
+
+
+}
