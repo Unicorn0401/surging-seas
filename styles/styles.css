@@ -1129,18 +1129,19 @@ input[type="range"] {
     }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
 
   /*LEARN MORE PAGE*/
 
   .tours img{
-    height:200px;
-    width:auto;
+    width:320px;
+    height:auto;
    }
 
-//* LEARN MORE PAGE END*/
+/* LEARN MORE PAGE END*/
 
 
+/*ABOUT PAGE*/
 
 
 
