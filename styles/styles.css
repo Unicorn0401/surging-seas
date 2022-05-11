@@ -1023,7 +1023,7 @@ input[type="range"] {
     
     /*ABOUT PAGE*/
     /*PROJECT INTRODUCTION*/
-    .pe,.pd{
+    .pe{
             width: 100%;
             padding: 40px;
         }
@@ -1046,6 +1046,7 @@ input[type="range"] {
         
     .pd{
             padding: 20px;
+            width:100%;
         }
         
       /*PROJECT INTRODUCTION END*/
@@ -1142,8 +1143,25 @@ input[type="range"] {
 
 
 /*ABOUT PAGE*/
+.project-doc img{
+  width: 320px;
+  height: auto;
+}
 
+#pro{
+  padding: 30px 5px 30px 5px;
+}
 
+.pd{
+  padding-left:5px;
+  padding-right:5px;
+}
 
+/*PETITION PAGE*/
+
+.petitiontitle{
+  display:none;
+}
+/*PETITION PAGE END*/
 
 }
